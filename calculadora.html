@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora
+	</title>
+</head>
+<style type="text/css">
+	input[type=button],input[type="text"]{
+		width:100%;
+		height:100%;
+		font-size:30px;
+	}
+	table, form{
+		width:300px;
+		height:300px;
+		font-size:20px;
+	}
+</style>
+<body>
+	<form>
+		<h1>Mi super calculadora</h1>
+		<table>
+			<tr>
+				<td colspan="4"><input type="text" id="datos"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="1" id="uno"class="numero" onclick="mostrar(1)"></td>
+				<td><input type="button" value="2" id="dos"class="numero"onclick="mostrar(2)"></td>
+				<td><input type="button" value="3" id="tres"class="numero" onclick="mostrar(3)"></td>
+				<td><input type="button" value="+" id="sumaDos" onclick="suma()"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="4" id="cuatro"class="numero" onclick="mostrar(4)"></td>
+				<td><input type="button" value="5" id="cinco"class="numero"onclick="mostrar(5)"></td>
+				<td><input type="button" value="6" id="seis"class="numero"onclick="mostrar(6)"></td>
+				<td><input type="button" value="-" id="restaDos"onclick="resta()"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="7" id="siete"class="numero" onclick="mostrar(7)"></td>
+				<td><input type="button" value="8" id="ocho"class="numero" onclick="mostrar(8)"></td>
+				<td><input type="button" value="9" id="nueve"class="numero"onclick="mostrar(9)"></td>
+				<td><input type="button" value="*" id="multipicaDos"onclick="multiplica()"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="0" id="cero"class="numero"onclick="mostrar(0)"></td>
+				<td><input type="button" value="C" id="borrador"onclick="borrar()"></td>
+				<td><input type="button" value="=" id="igual"onclick="resultado()"></td>
+				<td><input type="button" value="/" id="dividiDos"onclick="divide()"></td>
+			</tr>
+
+		</table>
+	</form>
+	<script src="calculadora.js"></script>
+</body>
+</html>
